@@ -38,9 +38,9 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-edit"></i> Class <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li id="topNavClass"><a href="<?php echo base_url('classes') ?>">Manage Class</a></li>
-                            <li  id="topNavSection"><a href="<?php echo base_url('section') ?>">Manage Section</a></li>
+                            <li id="topNavSection"><a href="<?php echo base_url('section') ?>">Manage Section</a></li>
                             <li id="topNavSubject"><a href="<?php echo base_url('subject') ?>">Manage Subject</a></li>
-                            
+
                         </ul>
                     </li>
 
@@ -48,9 +48,9 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-list-alt"></i>Student <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li id="topNavClass"><a href="<?php echo base_url('student?opy=addst') ?>">Add Student</a></li>
-                            <li  id="topNavSection"><a href="<?php echo base_url('student?opy=bulkst') ?>">Add Bulk Student</a></li>
+                            <li id="topNavSection"><a href="<?php echo base_url('student?opy=bulkst') ?>">Add Bulk Student</a></li>
                             <li id="topNavSubject"><a href="<?php echo base_url('student?opy=mgst') ?>">Manage Student</a></li>
-                            
+
                         </ul>
                     </li>
 
@@ -58,9 +58,9 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Class <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li id="topNavClass"><a href="<?php echo base_url('classes') ?>">Manage Class</a></li>
-                            <li  id="topNavSection"><a href="<?php echo base_url('section') ?>">Manage Section</a></li>
+                            <li id="topNavSection"><a href="<?php echo base_url('section') ?>">Manage Section</a></li>
                             <li id="topNavSubject"><a href="<?php echo base_url('subject') ?>">Manage Subject</a></li>
-                            
+
                         </ul>
                     </li>
 
@@ -68,22 +68,22 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Class <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li id="topNavClass"><a href="<?php echo base_url('classes') ?>">Manage Class</a></li>
-                            <li  id="topNavSection"><a href="<?php echo base_url('section') ?>">Manage Section</a></li>
+                            <li id="topNavSection"><a href="<?php echo base_url('section') ?>">Manage Section</a></li>
                             <li id="topNavSubject"><a href="<?php echo base_url('subject') ?>">Manage Subject</a></li>
-                            
+
                         </ul>
                     </li>
 
                 </ul>
-                
+
                 <ul class="nav navbar-nav navbar-right">
-                    
+
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i> <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="<?php echo base_url('setting') ?>">Setting</a></li>
                             <li><a href="<?php echo base_url('users/logout') ?>">Logout</a></li>
-                            
+
                         </ul>
                     </li>
                 </ul>

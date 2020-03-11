@@ -33,6 +33,27 @@
                 <ul class="nav navbar-nav">
                     <li id="topNavDashboard"><a href="<?php echo base_url('dashboard') ?>"><i class="glyphicon glyphicon-dashboard">Dashboard</i></a></li>
 
+
+                    <li class="dropdown" id="topClassMainNav">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-edit"></i> Class <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li id="topNavClass"><a href="<?php echo base_url('classes') ?>">Manage Class</a></li>
+                            <li  id="topNavSection"><a href="<?php echo base_url('section') ?>">Manage Section</a></li>
+                            <li id="topNavSubject"><a href="<?php echo base_url('subject') ?>">Manage Subject</a></li>
+                            
+                        </ul>
+                    </li>
+
+                    <li class="dropdown" id="topClassMainNav">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-list-alt"></i>Student <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li id="topNavClass"><a href="<?php echo base_url('student?opy=addst') ?>">Add Student</a></li>
+                            <li  id="topNavSection"><a href="<?php echo base_url('student?opy=bulkst') ?>">Add Bulk Student</a></li>
+                            <li id="topNavSubject"><a href="<?php echo base_url('student?opy=mgst') ?>">Manage Student</a></li>
+                            
+                        </ul>
+                    </li>
+
                     <li class="dropdown" id="topClassMainNav">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Class <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -42,23 +63,27 @@
                             
                         </ul>
                     </li>
-                </ul>
-                <form class="navbar-form navbar-left">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Link</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+
+                    <li class="dropdown" id="topClassMainNav">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Class <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
+                            <li id="topNavClass"><a href="<?php echo base_url('classes') ?>">Manage Class</a></li>
+                            <li  id="topNavSection"><a href="<?php echo base_url('section') ?>">Manage Section</a></li>
+                            <li id="topNavSubject"><a href="<?php echo base_url('subject') ?>">Manage Subject</a></li>
+                            
+                        </ul>
+                    </li>
+
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i> <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="<?php echo base_url('setting') ?>">Setting</a></li>
+                            <li><a href="<?php echo base_url('users/logout') ?>">Logout</a></li>
+                            
                         </ul>
                     </li>
                 </ul>

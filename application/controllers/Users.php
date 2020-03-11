@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Users extends CI_Controller{
+class Users extends MY_Controller{
     public function __construct()
     {
         parent::__construct();
@@ -12,6 +12,9 @@ class Users extends CI_Controller{
     }
 
     public function login(){
+
+        
+
         $validator = array('success' => false, 'messages' => array());
         $validate_data = array(
             array(
@@ -79,4 +82,12 @@ class Users extends CI_Controller{
             return false;
         }
     }
+
+    public function logout(){
+        $this->load->library('session');
+        $this->session->sess_destroy();
+        redirect('login', 'refresh');
+    }
 }
+
+?>

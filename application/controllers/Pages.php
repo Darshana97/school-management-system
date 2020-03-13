@@ -15,14 +15,18 @@ class Pages extends MY_Controller {
 
 		if($page == 'login'){
 			$this->isLoggedIn();
+			$this->load->view($page, $data);
 			
 		}
 		else{
 			$this->isNotLoggedIn();
+			$this->load->view('templates/header', $data);
+			$this->load->view($page, $data);
+			$this->load->view('templates/footer', $data);
 			
 		}
 
-		$this->load->view($page, $data);
+		
 	}
 }
 

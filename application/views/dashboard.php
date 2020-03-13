@@ -44,35 +44,53 @@
                         </ul>
                     </li>
 
-                    <li class="dropdown" id="topClassMainNav">
+                    <li class="dropdown" id="topStudentMainNav">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-list-alt"></i>Student <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li id="topNavClass"><a href="<?php echo base_url('student?opy=addst') ?>">Add Student</a></li>
-                            <li id="topNavSection"><a href="<?php echo base_url('student?opy=bulkst') ?>">Add Bulk Student</a></li>
-                            <li id="topNavSubject"><a href="<?php echo base_url('student?opy=mgst') ?>">Manage Student</a></li>
+                            <li id="addStudentNav"><a href="<?php echo base_url('student?opy=addst') ?>">Add Student</a></li>
+                            <li id="addBulkStudentNav"><a href="<?php echo base_url('student?opy=bulkst') ?>">Add Bulk Student</a></li>
+                            <li id="manageStudentNav"><a href="<?php echo base_url('student?opy=mgst') ?>">Manage Student</a></li>
 
                         </ul>
                     </li>
 
-                    <li class="dropdown" id="topClassMainNav">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Class <span class="caret"></span></a>
+                    <li id="topClassMainNav">
+                        <a href="<?php echo base_url('teacher') ?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-briefcase"></i>Teacher <span class="caret"></span></a>
+
+                    </li>
+
+                    <li class="dropdown" id="topAttendaceMainNav">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Attendance <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li id="topNavClass"><a href="<?php echo base_url('classes') ?>">Manage Class</a></li>
-                            <li id="topNavSection"><a href="<?php echo base_url('section') ?>">Manage Section</a></li>
-                            <li id="topNavSubject"><a href="<?php echo base_url('subject') ?>">Manage Subject</a></li>
+                            <li id="takeAttendNav"><a href="<?php echo base_url('attendance?atd=add') ?>">Take Attendance</a></li>
+                            <li id="attendReport"><a href="<?php echo base_url('attendance?atd=report') ?>">Attendance Report</a></li>
+
 
                         </ul>
                     </li>
 
-                    <li class="dropdown" id="topClassMainNav">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Class <span class="caret"></span></a>
+                    <li class="dropdown" id="topMarksheetMainNav">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Marksheet <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li id="topNavClass"><a href="<?php echo base_url('classes') ?>">Manage Class</a></li>
-                            <li id="topNavSection"><a href="<?php echo base_url('section') ?>">Manage Section</a></li>
-                            <li id="topNavSubject"><a href="<?php echo base_url('subject') ?>">Manage Subject</a></li>
+                            <li id="manageMarksheet"><a href="<?php echo base_url('marksheet?opt=mngms') ?>">Manage Marksheet</a></li>
+                            <li id="manageMarks"><a href="<?php echo base_url('marksheet?opt=mgmk') ?>">Manage Marks</a></li>
+
 
                         </ul>
                     </li>
+
+                    <li class="dropdown" id="topAttendaceMainNav">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accounting <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li id="createStudentNav"><a href="<?php echo base_url('accounting?opt=crtpay') ?>">Create Student Payment</a></li>
+                            <li id="managePayNav"><a href="<?php echo base_url('accounting?opt=mgpay') ?>">Manage Payment</a></li>
+                            <li id="expNav"><a href="<?php echo base_url('accounting?opt=mgexp') ?>">Expences</a></li>
+                            <li id="incomeNav"><a href="<?php echo base_url('accounting?opt=ime') ?>">Income</a></li>
+
+                        </ul>
+                    </li>
+
+
 
                 </ul>
 

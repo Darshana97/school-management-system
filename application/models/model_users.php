@@ -35,5 +35,14 @@ class Model_users extends CI_Model
         }
     }
 
+    public function fetchUserData($userId = null){
+        if($userId){
+            $sql = "SELECT * FROM users WHERE user_id = ?";
+            $query = $this->db->query($sql, array($userId));
+            return $query->row_array();
+
+        }
+    }
+
     
 }

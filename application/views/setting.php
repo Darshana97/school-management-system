@@ -17,21 +17,22 @@
                     <form action="<?php echo base_url('users/updateProfile') ?>" method="post" id="updateProfileForm">
                         <fieldset>
                             <legend>Manage Username</legend>
+
                             <div class="form-group">
                                 <label for="username">Username: </label>
-                                <input type="text" name="username" id="username" class="form-control" placeholder="Username" value="">
+                                <input type="text" name="username" id="username" class="form-control" placeholder="Username" value="<?php echo $userdata['username'] ?>">
                             </div>
                             <div class="form-group">
                                 <label for="fname">First Name:  </label>
-                                <input type="text" name="fname" id="fname" class="form-control" placeholder="First Name" value="">
+                                <input type="text" name="fname" id="fname" class="form-control" placeholder="First Name" value="<?php echo $userdata['fname'] ?>">
                             </div>
                             <div class="form-group">
                                 <label for="lname">Last Name: </label>
-                                <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Names" value="">
+                                <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Names" value="<?php echo $userdata['lname'] ?>">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email: </label>
-                                <input type="text" name="email" id="email" class="form-control" placeholder="Email" value="">
+                                <input type="text" name="email" id="email" class="form-control" placeholder="Email" value="<?php echo $userdata['email'] ?>">
                             </div>
 
                             <button type="submit" class="btn btn-primary">Save Changes</button>

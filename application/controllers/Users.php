@@ -88,4 +88,44 @@ class Users extends MY_Controller{
         $this->session->sess_destroy();
         redirect('login', 'refresh');
     }
+
+    public function updateProfile(){
+        $this->load->library('session');
+        $userId = $this->session->userdata('id');
+        $validator = array('success' => false, 'messages' => array());
+        $validate_data = array(
+            array(
+                'field' => 'username',
+                'label' => 'Username',
+                'rules' => 'required'
+            ),
+            array(
+                'field' => 'fname',
+                'label' => 'First Name',
+                'rules' => 'required'
+            )
+        );
+
+        $this->form_validation->set_rules($validate_data);
+        $this->form_validation->set_error_delimiters('<p class="text-danger">','</p>');
+
+        if($this->form_validation->run() === true){
+            $update = $this->model_users->updateProfile($userId);
+            if($update == true){
+                $validator['success'] = true;
+                $validator['messages'] = 'Successfully update';
+
+            }
+            else{
+                $validator['success'] = false;
+                $validator['messages'] = 'Error while updating the information into the database';
+            }
+        }
+        else{
+            $validator['success'] = false;
+            foreach($_POST as $key => $value){
+                $validator['messages'][$key] = form_error($key);
+            }
+        }
+    }
 }

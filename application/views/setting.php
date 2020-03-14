@@ -33,6 +33,8 @@
                                 <label for="email">Email: </label>
                                 <input type="text" name="email" id="email" class="form-control" placeholder="Email" value="">
                             </div>
+
+                            <button type="submit" class="btn btn-primary">Save Changes</button>
                             
                         </fieldset>
                     </form>
@@ -42,6 +44,19 @@
                     <form action="<?php echo base_url('users/changePassword') ?>" method="post" id="changePasswordForm">
                         <fieldset>
                             <legend>Change Password</legend>
+                            <div class="form-group">
+                                <label for="currentPassword">Current Password: </label>
+                                <input type="text" name="currentPassword" id="currentPassword" class="form-control" placeholder="Current Password" >
+                            </div>
+                            <div class="form-group">
+                                <label for="newPassword">New Password: </label>
+                                <input type="text" name="newPassword" id="newPassword" class="form-control" placeholder="New Password" >
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm Password: </label>
+                                <input type="text" name="confirmPassword" id="confirmPassword" class="form-control" placeholder="Confirm Password" >
+                            </div>
+                            <button type="submit" class="btn btn-primary">Change Password</button>
                         </fieldset>
                     </form>
                 </div>

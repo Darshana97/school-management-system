@@ -127,5 +127,7 @@ class Users extends MY_Controller{
                 $validator['messages'][$key] = form_error($key);
             }
         }
+
+        echo json_encode($validator);
     }
 }

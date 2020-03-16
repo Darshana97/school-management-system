@@ -19,6 +19,18 @@ class Model_users extends CI_Model
         }
     }
 
+    public function validate_current_password($password = null, $userId = null)
+    {
+        if ($password && $userId) {
+            $sql = "SELECT * FROM users WHERE password = ? AND user_id = ?";
+            $query = $this->db->query($sql, array($password, $userId));
+            $result = $query->row_array();
+            return ($query->num_rows() === 1) ? true : false;
+        } else {
+            return false;
+        }
+    }
+
     public function login($username = null, $password = null)
     {
         if ($username && $password) {
@@ -50,6 +62,22 @@ class Model_users extends CI_Model
                 'faname' => $this->input->post('fname'),
                 'lname' => $this->input->post('lname'),
                 'email' => $this->input->post('email'),
+            );
+
+            $this->db->where('user_id', $userId);
+            $status = $this->db->update('users', $update_data);
+            return ($status == true) ? true : false;
+        } else {
+            return false;
+        }
+    }
+
+    public function changePassword($userId = null)
+    {
+        if ($userId) {
+            $update_data = array(
+                'password' => md5($this->input->post('password')),
+                
             );
 
             $this->db->where('user_id', $userId);

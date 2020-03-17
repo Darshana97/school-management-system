@@ -77,7 +77,7 @@ class Model_users extends CI_Model
         if ($userId) {
             $update_data = array(
                 'password' => md5($this->input->post('password')),
-                
+
             );
 
             $this->db->where('user_id', $userId);

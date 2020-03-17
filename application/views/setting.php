@@ -23,7 +23,7 @@
                                 <input type="text" name="username" id="username" class="form-control" placeholder="Username" value="<?php echo $userdata['username'] ?>">
                             </div>
                             <div class="form-group">
-                                <label for="fname">First Name:  </label>
+                                <label for="fname">First Name: </label>
                                 <input type="text" name="fname" id="fname" class="form-control" placeholder="First Name" value="<?php echo $userdata['fname'] ?>">
                             </div>
                             <div class="form-group">
@@ -36,7 +36,7 @@
                             </div>
 
                             <button type="submit" class="btn btn-primary">Save Changes</button>
-                            
+
                         </fieldset>
                     </form>
                 </div>
@@ -47,15 +47,15 @@
                             <legend>Change Password</legend>
                             <div class="form-group">
                                 <label for="currentPassword">Current Password: </label>
-                                <input type="text" name="currentPassword" id="currentPassword" class="form-control" placeholder="Current Password" >
+                                <input type="text" name="currentPassword" id="currentPassword" class="form-control" placeholder="Current Password">
                             </div>
                             <div class="form-group">
                                 <label for="newPassword">New Password: </label>
-                                <input type="text" name="newPassword" id="newPassword" class="form-control" placeholder="New Password" >
+                                <input type="text" name="newPassword" id="newPassword" class="form-control" placeholder="New Password">
                             </div>
                             <div class="form-group">
                                 <label for="confirmPassword">Confirm Password: </label>
-                                <input type="text" name="confirmPassword" id="confirmPassword" class="form-control" placeholder="Confirm Password" >
+                                <input type="text" name="confirmPassword" id="confirmPassword" class="form-control" placeholder="Confirm Password">
                             </div>
                             <button type="submit" class="btn btn-primary">Change Password</button>
                         </fieldset>
